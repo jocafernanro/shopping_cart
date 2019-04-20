@@ -1,0 +1,55 @@
+/* imports */
+@import 'normalize.css'; /* normalize all browsers more consistently */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+/* @import url('~bulma/css/bulma.min.css');  */
+@import url('~bootstrap-4-grid/css/grid.min.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('animations.css');
+
+/* vars */
+:root{
+    --color-grey-light: #F8F8F8;
+    --color-grey-dark: #73757B;
+    --color-primary: #1B1B4E;
+    --color-primary-light: rgb(41, 41, 82);
+    --color-primary-alternative: #0336FF;
+    --color-secundary: #E91E63;
+    --color-secundary-light: #ff5b93;
+
+    --floating-button-size: 3em;
+
+    --border-radius-light: 20px;
+    --border-radius-normal: 30px;
+    --border-radius-hard: 40px;
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px;
+    background-color: var(--color-grey-light); 
+    overflow: hidden;
+    scrollbar-width: none;
+
+}
+
+#app{
+    padding: 2em 1em;
+}
+
+#shopping {
+    margin: 2em 0 0 0;
+}
+
+button:focus {outline:0;}
+
+input:focus, textarea {
+    outline: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+

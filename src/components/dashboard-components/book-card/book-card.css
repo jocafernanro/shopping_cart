@@ -1,0 +1,290 @@
+.card-container {
+    position: relative;
+    z-index: 0;
+}
+
+.book-card{
+    border-radius: var(--border-radius-normal);
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: inherit;
+    padding: 1em 1em 1em 0;
+    margin-bottom: 1em;
+    /* animation: fadein 1s ease-in; */
+}
+
+.card-image-block {
+    display: flex;
+    justify-content: center;
+    width: 7em;
+    margin: 0;
+}
+
+.card-image-container{
+    margin: 0 !important;
+    padding: 0 !important;
+    align-self: center;
+    overflow: hidden;
+    border-radius: var(--border-radius-light);
+    display: flex;
+    justify-content: center;
+    width: 5em;
+    height: 8em;
+}
+
+.card-image {
+    width: 8em;
+    height: 12em;
+}
+
+
+.card-label {
+    letter-spacing: 3px;
+    font-size:10px;
+    color: var(--color-primary-light);
+    margin: 0 0 1.2em 0;
+}
+
+.card-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title{
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.card-description{
+    margin: 0;
+    color: var(--color-grey-dark);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.card-prices-container {
+    margin: 1em 0 0 0;   
+}
+
+.card-price{
+    color: var(--color-secundary);
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    padding: 0.3em;
+    margin: 0 .3em .3em 0;
+    cursor: pointer;
+}
+
+.card-price:hover{
+    background-color: gold;
+}
+
+.floating-button{
+    display: flex;
+    background-color: var(--color-secundary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px var(--color-secundary);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--floating-button-size);
+    height: var(--floating-button-size);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.floating-button:hover{
+    animation:spin .2s ease-in-out;
+    box-shadow: 0px 0px 15px var(--color-secundary);
+}
+
+.floating-button:active {
+    /* background-color: var(--color-secundary-light); */
+    transform: scale(0.9, 0.9);
+}
+
+.select-quantity-modal {
+    
+}
+
+.select-quantity-button-container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: var(--floating-button-size);
+}
+
+.indicate-quantity-input {
+    width: 100%;
+    border: none;
+    text-align: center;
+    padding: 0.3em 0;
+    background-color: var(--color-secundary);
+    color: white;
+
+}
+
+.increase-quantity-button {
+    display: flex;
+    background-color: var(--color-secundary);
+    color: white;
+    border: none;
+    border-radius: 50% 50% 0 0 ;
+
+    top: 0;
+    right: 0;
+    width: var(--floating-button-size);
+    height: var(--floating-button-size);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.increase-quantity-button:active {
+    /* box-shadow: inset 0 0 10px #8a005c; */
+    background-color: var(--color-secundary-light);
+}
+
+.reduce-quantity-button {
+    display: flex;
+    background-color: var(--color-secundary);
+    color: white;
+    border: none;
+    border-radius: 0 0 50% 50% ;
+    top: 0;
+    right: 0;
+    width: var(--floating-button-size);
+    height: var(--floating-button-size);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.reduce-quantity-button:active {
+    /* box-shadow: inset 0 0 10px #8a005c; */
+    background-color: var(--color-secundary-light);
+}
+
+.scale-up-ver-top {
+	-webkit-animation: scale-up-ver-top 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-ver-top 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.increase-quantity-icon {
+
+}
+
+.reduce-quantity-icon {
+    animation: spin .4s ease-in-out;
+}
+
+.select-cancel-quantity-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* transform: translateX(-50%); 
+    transform: translateY(-50%); */
+    display: flex;
+    z-index: 1;
+}
+
+.select-quantity-cancel-button {
+    border: none;
+    background-color: white;
+    color: red;
+    padding: .5em 1em;
+    border-radius: var(--border-radius-light);
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    margin: 0 1em .5em 0;
+    cursor: pointer;
+}
+
+.select-quantity-cancel-button:active {
+    transform: scale(0.9, 0.9);
+}
+
+.select-quantity-ok-button {
+    border: none;
+    background-color: white;
+    color: green;
+    border-radius: var(--border-radius-light);
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding: .5em 1em;
+    cursor: pointer;
+    margin: 0 1em 0 0;
+}
+
+.select-quantity-ok-button:active {
+    transform: scale(0.9, 0.9);
+}
+
+.select-quantity-mask {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--color-primary);
+    z-index: 1;
+    position: absolute;
+    border-radius: var(--border-radius-normal);
+    animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+.jello-horizontal {
+	-webkit-animation: jello-horizontal 0.9s both;
+	        animation: jello-horizontal 0.9s both;
+}
+
+.fade-out {
+	-webkit-animation: fade-out 1s ease-out both;
+	        animation: fade-out 1s ease-out both;
+}
+
+
+.puff-out-center {
+	-webkit-animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+	        animation: puff-out-center 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+}
+
+@media (max-width: 767.98px) {
+    .select-cancel-quantity-button-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-prices-container {
+        margin: .3em 0 0 0;
+    }
+
+    .card-price {
+        font-size: 14px;
+        display: inline-block;
+        margin: .3em 0 0 0;
+    }
+}
+
+.active {
+    background-color: gold;
+    animation: fadein 1s linear;
+    color: white;
+}

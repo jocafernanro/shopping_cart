@@ -1,0 +1,62 @@
+{
+  "name": "shopping_cart",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "init": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "keywords": [],
+  "autor": "José Carlos Fernández Rodríguez",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap-4-grid": "^2.4.1",
+    "core-js": "^2.6.5",
+    "epic-spinners": "^1.0.4",
+    "trae": "^1.4.2",
+    "vue": "^2.6.10",
+    "vue-content-loading": "^1.6.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-eslint": "^3.6.0",
+    "@vue/cli-plugin-unit-jest": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "jest-transform-stub": "^2.0.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
